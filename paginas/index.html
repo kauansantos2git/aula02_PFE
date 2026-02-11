@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo/style.css">
+    <title>Formulários Inteligentes</title>
+</head>
+<body>
+    <h2>Exemplo</h2>
+    <form id="form-inscricao">
+        <label>Nome:</label>
+        <input type="text" id="nome">
+        <br>
+        <label>Idade:</label>
+        <input type="number" id="idade">
+        <br>
+        <label>Nível de experiência (1 a 10):</label>
+        <input type="number" id="nivel">
+        <br>
+        <button type="button" onclick="validar()">Enviar</button>
+    </form>
+    <p id="mensagem"></p>
+
+    <!-- DESAFIO 1 -->
+     <h2>Desafio 1</h2>
+    <form id="form-desafio1">
+        <label>Senha 1:</label>
+        <input type="password" id="senha1">
+        <br>
+        <label>Senha 2:</label>
+        <input type="password" id="senha2">
+        <br>
+        <button type="button" onclick="validardesafio1()">Enviar</button>
+    </form>
+    <p id="mensagem2"></p>
+
+    <!-- DESAFIO 2 -->
+     <h2>Desfio 2</h2>
+    <form id="form-desafio2">
+        <label>Idade:</label>
+        <input type="number" id="idade_df2">
+        <br>
+        <label>Você é estudante?</label>
+        <input type="checkbox" id="estudante" required>
+        <label for="estudante">Sim</label>
+        <br>
+        <button type="button" onclick="validardesafio2()">Validar</button>
+    </form>
+    <p id="mensagem3"></p>
+
+    <!-- DESAFIO 3 -->
+    <h2>Desafio 3</h2>
+        <form id="form-desafio3">
+        <label>Nome:</label>
+        <input type="text" id="nome_df3">
+        <br>
+        <label>Idade:</label>
+        <input type="number" id="idade_df3">
+        <br>
+        <button type="button" onclick="validardesafio3()">Validar</button>
+    </form>
+    <p id="mensagem4"></p>
+
+    <script src="../scripts/index.js"></script>
+</body>
+</html>
