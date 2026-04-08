@@ -29,6 +29,18 @@ label {
     margin-bottom: 5px;
 }
 
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: normal;
+}
+
+.checkbox-label input[type="checkbox"] {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
 input[type="text"],
 input[type="password"],
 input[type="number"] {
@@ -66,3 +78,46 @@ p {
     font-weight: bold;
 }
 
+@media (max-width: 480px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    button {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        padding: 30px 15px;
+        font-size: 1.563rem;
+    }
+
+    h2 {
+        margin-bottom: 15px;
+        font-size: 3rem;
+    }
+
+    button {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 25px;
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="number"] {
+        padding: 15px;
+        font-size: 1.2rem;
+        border-radius: 10px;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+        transform: scale(2);
+    }
+}
